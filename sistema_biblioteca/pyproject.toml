@@ -1,0 +1,21 @@
+[project]
+name = "sistema_biblioteca"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "mattusilveira", email = "matheus12062007silveira7@gmail.com"},
+]
+dependencies = ["django>=5.1.6", "djangorestframework>=3.15.2"]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+dev = "python manage.py runserver"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+createsuperuser = "python manage.py createsuperuser"
